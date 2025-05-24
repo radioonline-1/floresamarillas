@@ -6,20 +6,21 @@
   <title>Bodega Franco</title>
   <link rel="icon" href="logo.png" type="image/png" />
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow-x: hidden;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom, #d80000, #000000);
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-      box-sizing: border-box;
-    }
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden; /* Sin scroll horizontal */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #d80000, #000000);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+
     *, *::before, *::after {
       box-sizing: inherit;
     }
@@ -125,6 +126,24 @@
         padding: 8px 10px;
       }
     }
+    /* Animación para movimiento de izquierda a derecha */
+@keyframes wiggle {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+}
+
+/* Clase para aplicar la animación al botón */
+.animate {
+  animation: wiggle 1.2s ease-in-out infinite;
+}
+
   </style>
 </head>
 <body>
@@ -139,7 +158,8 @@
     <a href="km5.html" class="btn"><img src="whatsapp.webp" alt="WhatsApp" /><span>DELIVERY RENACER</span></a>
     <a href="canindeyu.html" class="btn"><img src="whatsapp.webp" alt="WhatsApp" /><span>DELIVERY CANINDEYU 1</span></a>
     <a href="canindeyu.html" class="btn"><img src="whatsapp.webp" alt="WhatsApp" /><span>DELIVERY CANINDEYU 2</span></a>
-  </div>
+    <a href="canindeyu.html" class="btn animate"><span>RECLAMOS/INFO/SUGERENCIAS</span></a>
+</div>
 
   <footer>
     &copy; 2025 Bodega Franco. Todos los derechos reservados.
