@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bodega Franco</title>
+  <link rel="icon" href="logo.png" type="image/png" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow-x: hidden;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #d80000, #000000);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+    *, *::before, *::after {
+      box-sizing: inherit;
+    }
+    .logo {
+      margin: 5vh 0 2vh;
+      width: 90vw;
+      max-width: 160px;
+    }
+    .logo img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .subtitle {
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      margin-bottom: 4vh;
+      text-align: center;
+      padding: 0 10px;
+    }
+    .button-container {
+      width: 90vw;
+      max-width: 450px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 0 10px 5vh;
+      box-sizing: border-box;
+      flex-grow: 1; /* Para que el footer quede abajo */
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #111;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      padding: 1rem 1.5rem;
+      font-size: 1.125rem;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      transition: all 0.3s ease;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .btn:hover {
+      background-color: #222;
+      transform: translateY(-2px);
+    }
+    .btn img {
+      height: 1.75rem;
+      margin-right: 1rem;
+      flex-shrink: 0;
+    }
+    .btn span {
+      flex-grow: 1;
+      text-align: center;
+    }
+    .rating {
+      margin-top: 2vh;
+      text-align: center;
+    }
+    .stars {
+      display: inline-flex;
+      direction: row;
+      cursor: pointer;
+    }
+    .star {
+      font-size: 2rem;
+      color: gray;
+      transition: color 0.2s;
+    }
+    .star.filled {
+      color: gold;
+    }
+    /* Footer */
+    footer {
+      width: 100%;
+      max-width: 450px;
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #ccc;
+      user-select: none;
+    }
+    /* Ajustes para pantallas muy pequeñas */
+    @media (max-width: 360px) {
+      .btn {
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+      }
+      .btn img {
+        height: 1.5rem;
+        margin-right: 0.75rem;
+      }
+      .subtitle {
+        font-size: 1rem;
+      }
+      footer {
+        font-size: 0.8rem;
+        padding: 8px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="logo.png" alt="Bodega Franco Logo" />
+  </div>
+  <div class="subtitle">PEDÍ EN SALTO DEL GUAIRA</div>
+  <div class="button-container">
+    <a href="central.html" class="btn"><img src="whatsapp.webp" alt="WhatsApp" /><span>DELIVERY CENTRAL</span></a>
+    <a href="km5.html" class="btn"><img src="whatsapp.webp" alt="WhatsApp" /><span>DELIVERY KM2</span></a>
+    <a href="km5.html" class="btn"><img src="whatsapp.webp" alt="WhatsApp" /><span>DELIVERY KM5</span></a>
+    <a href="km5.html" class="btn"><img src="whatsapp.webp" alt="WhatsApp" /><span>DELIVERY RENACER</span></a>
+    <a href="canindeyu.html" class="btn"><img src="whatsapp.webp" alt="WhatsApp" /><span>DELIVERY CANINDEYU 1</span></a>
+    <a href="canindeyu.html" class="btn"><img src="whatsapp.webp" alt="WhatsApp" /><span>DELIVERY CANINDEYU 2</span></a>
+  </div>
+
+  <footer>
+    &copy; 2025 Bodega Franco. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
